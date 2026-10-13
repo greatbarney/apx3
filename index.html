@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>에이펙스3디자인 | 설계 시공 디자인</title>
+<meta name="description" content="에이펙스3디자인 - 설계 시공 디자인 apex">
+<style>
+:root{--b:#1B4DB1;--bd:#133A87;--bl:#E8F0FE;--t:#1f2937;--g:#d1d5db}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:var(--t);line-height:1.6;background:#fff}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;z-index:10}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.bar{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;font-size:18px;color:var(--b)}
+.logo{white-space:nowrap}
+nav{display:none}
+nav a{margin-left:16px;font-size:14px;white-space:nowrap}
+@media(min-width:700px){nav{display:block}}
+.hero{background:var(--bl);padding:48px 0}
+.hero .wrap{display:grid;gap:28px;align-items:center}
+.hero h1{margin:0 0 8px;font-size:30px;color:var(--bd)}
+.hero p{margin:0 0 20px;font-size:18px}
+.btn{display:inline-block;background:var(--b);color:#fff;padding:14px 26px;border-radius:8px;font-weight:700;border:0;font-size:16px;cursor:pointer}
+.btn:hover{background:var(--bd)}
+.ph{background:#e5e7eb;border-radius:10px;color:#6b7280;display:flex;align-items:center;justify-content:center;font-size:14px}
+.hero .ph{height:220px}
+section{padding:48px 0}
+h2{margin:0 0 20px;font-size:24px;color:var(--bd)}
+.grid3{display:grid;gap:16px}
+.card{border:1px solid var(--g);border-radius:10px;padding:22px}
+.card h3{margin:0 0 6px;color:var(--b)}
+.card p{margin:0;font-size:15px}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gal .ph{height:120px}
+.alt{background:var(--bl)}
+form{display:grid;gap:14px;max-width:560px}
+label{font-weight:700;font-size:14px;display:block;margin-bottom:4px}
+input,textarea{width:100%;padding:12px;border:1px solid var(--g);border-radius:8px;font:inherit;background:#fff}
+textarea{min-height:130px;resize:vertical}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+#msg{font-size:15px;min-height:22px}
+footer{background:var(--bd);color:#fff;padding:32px 0;font-size:15px}
+footer p{margin:2px 0}
+.call{position:fixed;right:16px;bottom:16px;background:var(--b);color:#fff;padding:14px 20px;border-radius:999px;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.25);z-index:20}
+@media(min-width:700px){
+.hero .wrap{grid-template-columns:1fr 1fr}
+.hero h1{font-size:40px}
+.grid3{grid-template-columns:repeat(3,1fr)}
+.gal{grid-template-columns:repeat(3,1fr)}
+.gal .ph{height:160px}
+.hero .ph{height:300px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#top">에이펙스3디자인</a>
+<nav><a href="#about">소개</a><a href="#service">서비스</a><a href="#cases">시공사례</a><a href="#contact">상담</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>에이펙스3디자인</h1>
+<p>설계 시공 디자인 apex</p>
+<a class="btn" href="#contact">무료 상담 신청</a>
+</div>
+<div class="ph" role="img" aria-label="대표 사진 자리">대표 사진 자리</div>
+</div></div>
+
+<section id="about"><div class="wrap">
+<h2>회사 소개</h2>
+<p>에이펙스3디자인은 인테리어 설계, 시공, 디자인을 함께 하는 회사입니다.</p>
+<p style="color:#6b7280">(입력 필요: 회사 소개 글, 주소, 사업 경력)</p>
+</div></section>
+
+<section id="service" class="alt"><div class="wrap">
+<h2>서비스</h2>
+<div class="grid3">
+<div class="card"><h3>설계</h3><p>(입력 필요: 설계 설명)</p></div>
+<div class="card"><h3>시공</h3><p>(입력 필요: 시공 설명)</p></div>
+<div class="card"><h3>디자인</h3><p>(입력 필요: 디자인 설명)</p></div>
+</div>
+</div></section>
+
+<section id="cases"><div class="wrap">
+<h2>시공 사례</h2>
+<div class="gal">
+<div class="ph">사진 자리 1</div><div class="ph">사진 자리 2</div><div class="ph">사진 자리 3</div>
+<div class="ph">사진 자리 4</div><div class="ph">사진 자리 5</div><div class="ph">사진 자리 6</div>
+</div>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap">
+<h2>상담 신청</h2>
+<form id="f" autocomplete="off">
+<div><label for="name">이름</label><input id="name" name="name" maxlength="30" required></div>
+<div><label for="phone">연락처</label><input id="phone" name="phone" maxlength="20" inputmode="tel" required></div>
+<div><label for="message">문의 내용</label><textarea id="message" name="message" maxlength="1000" required></textarea></div>
+<div class="hp"><label>비워 두세요<input name="website" tabindex="-1" autocomplete="off"></label></div>
+<button class="btn" type="submit" id="send">상담 신청하기</button>
+<div id="msg" role="status"></div>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<p><b>에이펙스3디자인</b></p>
+<p>전화: <a href="tel:01025030086">010-2503-0086</a></p>
+<p>이메일: greatbarney@gmail.com</p>
+<p>주소: (입력 필요)</p>
+</div></footer>
+
+<a class="call" href="tel:01025030086">전화 상담</a>
+
+<script>
+var URL_ENDPOINT="https://script.google.com/macros/s/AKfycbyEIRpwAy5PPF9KLXz1SoBsyC4oLUxC39lGnHNXdG6y7mInHoE64qNj7r2mNxIvKu17/exec";
+var f=document.getElementById("f"),msg=document.getElementById("msg"),btn=document.getElementById("send");
+f.addEventListener("submit",function(e){
+e.preventDefault();
+if(URL_ENDPOINT.indexOf("http")!==0){msg.textContent="접수 기능을 준비 중입니다. 전화로 문의해 주세요.";return}
+var d=new FormData(f);
+var body=new URLSearchParams();
+d.forEach(function(v,k){body.append(k,v)});
+btn.disabled=true;msg.textContent="보내는 중...";
+fetch(URL_ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:body.toString()})
+.then(function(){msg.textContent="상담 신청이 접수되었습니다. 곧 연락드리겠습니다.";f.reset()})
+.catch(function(){msg.textContent="전송에 실패했습니다. 전화로 문의해 주세요."})
+.finally(function(){btn.disabled=false});
+});
+</script>
+</body>
+</html>
